@@ -10,9 +10,12 @@
 <body>
   popup
   <script>
+    var isPopup = false;
     if (window.opener && window.opener !== window) {
-      alert('popup');
-    }
+      isPopup = true;
+    } 
+    
+    alert(isPopup ? '팝업' : '팝업 아님');
   </script>
 </body>
 </html>
