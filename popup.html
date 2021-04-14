@@ -9,5 +9,10 @@
 </head>
 <body>
   popup
+  <script>
+    if (window.opener && window.opener !== window) {
+      alert('popup');
+    }
+  </script>
 </body>
 </html>
